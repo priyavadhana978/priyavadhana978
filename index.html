@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Midnight Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>🌙 Midnight Journal</h2>
+        <a href="#home">Home</a>
+        <a href="#journal">Journal</a>
+        <a href="#entries">My Entries</a>
+    </nav>
+
+    <section id="home" class="home">
+
+        <h1>Every Thought Deserves a Little Moonlight</h1>
+
+        <p>Your personal space to write, reflect and remember.</p>
+
+        <a href="#journal" class="btn">Start Journaling ✨</a>
+
+    </section>
+
+    <section id="journal" class="journal">
+
+        <h2>Dear Moon... 💜</h2>
+
+        <input type="text" id="title" placeholder="Entry Title">
+
+        <h3>How are you feeling today?</h3>
+
+        <select id="mood">
+            <option value="Happy">😊 Happy</option>
+            <option value="Calm">🌸 Calm</option>
+            <option value="Sad">🌧️ Sad</option>
+            <option value="Excited">✨ Excited</option>
+            <option value="Tired">🌙 Tired</option>
+        </select>
+
+        <textarea id="content" placeholder="Dear Moon, today..."></textarea>
+
+        <button onclick="saveEntry()">Save Entry 🌙</button>
+
+        <p id="message" role="status"></p>
+
+    </section>
+
+    <section id="entries" class="entries">
+
+        <h2>My Little Universe ✨</h2>
+        <input
+    type="text"
+    id="searchEntries"
+    placeholder="🔍 Search your journal entries..."
+         >
+        <div id="entriesContainer"></div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
